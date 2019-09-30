@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\cadastral\controllers';
+    public $controllerNamespace = 'alhimik1986\bftcadastral\controllers';
 
     /**
      * {@inheritdoc}

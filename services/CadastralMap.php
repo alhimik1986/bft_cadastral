@@ -3,7 +3,7 @@
 
 namespace alhimik1986\bftcadastral\services;
 
-use app\modules\cadastral\models\Cadastral;
+use alhimik1986\bftcadastral\models\Cadastral;
 use Exception;
 
 class CadastralMap

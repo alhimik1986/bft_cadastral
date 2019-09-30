@@ -4,7 +4,7 @@
 namespace alhimik1986\bftcadastral\commands;
 
 use Exception;
-use app\modules\cadastral\services\CadastralMap;
+use alhimik1986\bftcadastral\services\CadastralMap;
 use yii\console\Controller;
 use yii\console\ExitCode;
 use yii\console\widgets\Table;

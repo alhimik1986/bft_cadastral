@@ -3,8 +3,8 @@
 namespace alhimik1986\bftcadastral\controllers;
 
 use Yii;
-use app\modules\cadastral\models\Cadastral;
-use app\modules\cadastral\models\CadastralSearch;
+use alhimik1986\bftcadastral\models\Cadastral;
+use alhimik1986\bftcadastral\models\CadastralSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
