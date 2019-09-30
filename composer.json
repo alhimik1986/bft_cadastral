@@ -1,0 +1,14 @@
+{
+    "name": "alhimik1986/bftcadastral",
+    "description": "test task",
+    "authors": [
+        {
+            "name": "Sidorovich Nikolay",
+            "email": "sidorovich21101986@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"alhimik1986\\bftcadastral": ""}
+    },
+    "require": {}
+}
