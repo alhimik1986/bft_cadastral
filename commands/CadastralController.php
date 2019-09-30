@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\modules\cadastral\commands;
+namespace alhimik1986\bftcadastral\commands;
 
 use Exception;
 use app\modules\cadastral\services\CadastralMap;

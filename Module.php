@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\cadastral;
+namespace alhimik1986\bftcadastral;
 
 /**
  * cadastral module definition class

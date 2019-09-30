@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\cadastral\models;
+namespace aalhimik1986\bftcadastral\models;
 
 use Yii;
 

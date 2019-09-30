@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\cadastral\models;
+namespace alhimik1986\bftcadastral\models;
 
 use Exception;
 use app\modules\cadastral\services\CadastralMap;
