@@ -61,7 +61,8 @@ class CadastralMap
      */
     public function getFromApi(string $cadNumber): ?array
     {
-        $result = $this->makeRequest($this->url, $cadNumber);
+    	$puredCadNumber = $this->pureCadNumber($cadNumber);
+        $result = $this->makeRequest($this->url, $puredCadNumber);
         if ($result['error_number'] OR $result['response_info']['http_code'] > 399) {
             throw new Exception(
                 'Unable get cadastral data. Error message: '.
@@ -75,7 +76,7 @@ class CadastralMap
         if ($response['feature']) {
             $attrs = $response['feature']['attrs'];
             $cadData = [
-                'cadastral_number' => $cadNumber,
+                'cadastral_number' => $puredCadNumber,
                 'address' => $attrs['address'],
                 'price' => $attrs['cad_cost'],
                 'area' => $attrs['area_value'],
