@@ -42,8 +42,9 @@ class CadastralMap
         $puredCadNumber = $this->pureCadNumber($cadNumber);
         $result = Cadastral::find()->where(['cadastral_number' => $puredCadNumber])->asArray($asArray)->one();
         if ( ! $result) {
-            $data = $this->getFromApi(($puredCadNumber));
+            $data = $this->getFromApi($cadNumber);
             if ($data) {
+                $data['cadastral_number'] = $this->pureCadNumber($data['cadastral_number']);
                 $model = new Cadastral();
                 $model->attributes = $data;
                 $model->save();
@@ -76,7 +77,7 @@ class CadastralMap
         if ($response['feature']) {
             $attrs = $response['feature']['attrs'];
             $cadData = [
-                'cadastral_number' => $puredCadNumber,
+                'cadastral_number' => $cadNumber,
                 'address' => $attrs['address'],
                 'price' => $attrs['cad_cost'],
                 'area' => $attrs['area_value'],
